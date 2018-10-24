@@ -31,16 +31,18 @@ public class SpringBootKkVideoA116SwaggerAdvanceApplication implements Applicati
 	private void loadProducts() {
 		logger.info("Create Samsung Galaxy record!");
 		Product samsungGalaxy = new Product();
+		samsungGalaxy.setId(1);
 		samsungGalaxy.setDescription("Samsung Galaxy J7 SM-J700F");
 		samsungGalaxy.setPrice(new BigDecimal("13299.00"));
-		samsungGalaxy.setImageUrl("https://www.amazon.in/Samsung-Galaxy-J7-SM-J700F-Gold/dp/B014DYVWWS?tag=googinhydr18418-21&tag=googinkenshoo-21&ascsubtag=115b9bbe-7ef0-4c67-825a-60b83fba9303");
+		samsungGalaxy.setImageUrl("https://www.google.com/search?q=samsung+galaxy+s9&ie=utf-8&oe=utf-8&client=firefox-b-1");
 		samsungGalaxy.setProductId("23526889931068308");
 		productRepository.save(samsungGalaxy);
 		
 		logger.info("Create iPhone record!");
 		Product iPhone = new Product();
+		iPhone.setId(2);
 		iPhone.setDescription("Apple iPhone 7");
-		iPhone.setImageUrl("https://www.flipkart.com/apple-iphone-7-rose-gold-32-gb/p/itmen6dapsvxanrk?gclid=Cj0KCQjwgIPOBRDnARIsAHA1X3Rm2-sqRfpmiyWQn3B246U8_MYk0eTO3UgZ0TiR2y1Wh-IqJMZ5EBIaAgIUEALw_wcB&pid=MOBEMK62JSRHU85T&lid=LSTMOBEMK62JSRHU85TIU9DKW&cmpid=content_mobile_8965229628_gmc_pla&tgi=sem%2C1%2CG%2C11214002%2Cg%2Csearch%2C%2C50314728260%2C1o1%2C%2C%2Cc%2C%2C%2C%2C%2C%2C%2C&s_kwcid=AL%21739%213%2150314728260%21%21%21%21356518884166%21&ef_id=Wb0-8gAABBk1ZGmB%3A20170920024538%3As");
+		iPhone.setImageUrl("https://www.apple.com/iphone/?afid=p238%7Cs7AkblcwL-dc_mtid_20925d2q39172_pcrid_294936685676&cid=wwa-us-kwgo-iphone-slid--");
 		iPhone.setProductId("198639393495300006");
 		iPhone.setPrice(new BigDecimal("47499"));
 		productRepository.save(iPhone);
