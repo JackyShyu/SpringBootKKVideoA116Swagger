@@ -6,25 +6,33 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+import io.swagger.annotations.ApiModelProperty;
+
 @Entity
 public class Product {
 	@Id
 	@Column(name="id")
+	@ApiModelProperty(notes = "The database ID")
 	private int id;
 	
 	@Column(name="version")
+	@ApiModelProperty(notes = "The database product version")
 	private int version;
 	
 	@Column(name="product_id")
+	@ApiModelProperty(notes = "The database product id")
 	private String productId;
 	
 	@Column(name="description")
+	@ApiModelProperty(notes = "The database product description")
 	private String description;
 	
 	@Column(name="image_url")
+	@ApiModelProperty(notes = "The database product image url")
 	private String imageUrl;
 	
 	@Column(name="price")
+	@ApiModelProperty(notes = "The database product price")
 	private BigDecimal price;
 	
 	public int getId() {
